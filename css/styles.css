@@ -1,0 +1,579 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header {
+    width: 100%; 
+
+}
+.container{
+    width: 100%;
+    margin: auto;   
+    display: flex; 
+    justify-content:space-evenly;
+    align-items: center;   
+}
+.navbar {
+    width: 100%;
+    background:rgb(30, 126, 152);
+}
+.logo img{
+    width: 220px;
+   padding: 16px;
+}
+.ff {
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.ff img {
+padding: 10px;
+}
+.button_header{
+    padding: 4px;
+    color: white;
+    background:rgb(30, 126, 152) ;
+}
+.button_header:active {
+    background: rgb(67, 168, 196);
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.navbar ul>li{
+    margin: 20px;   
+    list-style-type: none;
+    position: relative;    
+}
+.navbar ul>li>a{
+     text-decoration: none;
+     color: white;     
+     font-family: 'Oswald', sans-serif;
+     cursor: pointer;
+     text-transform: uppercase;
+}
+#header ul>li>a:hover::before {
+    content: '';
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:rgb(140, 211, 231);
+    position: absolute;
+    right: 35%;
+    top: -27%;    
+}
+a::before{content:""; background-color:rgb(55, 198, 238)}
+
+#header ul>li>a:hover {   
+    color:rgb(140, 211, 231);
+}
+
+#bg-logo{
+    background: url(./img/logo_tt.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 840px;
+    
+}
+.logo-smp{   
+    
+    width: 30%;     
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 50px ;
+}
+/* .logo-smp img{
+    height: 250px;
+    
+} */
+.logo-smp h2 {
+    margin-top: 20px;
+    color: rgb(30, 126, 152);
+    margin-bottom: 20px;
+}
+.logo-smp button {
+    width: 80%;
+    padding: 5px;
+    margin: 20px 0 ;
+    background: rgb(30, 126, 152);
+    color: white;
+}
+.logo-smp button:active {
+    background: rgb(92, 157, 175);    
+}
+#one{   
+     display: flex;
+    flex-direction: row;
+     justify-content: space-around;
+    align-items: center;      
+    background:  #f8fcff; 
+
+    animation-name: five_animation;
+    animation-duration: 3s;    
+    animation-iteration-count: 1;
+}
+.one1 {
+    width: 16%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;       
+    background:  #f8fcff;
+    margin: 20px 0;
+    padding: 10px;
+    color: white;
+    background: rgb(78, 173, 199);
+    border-radius: 18px;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.who h2{
+    font-size: 25px;
+    padding: 5px; 
+    padding-top: 20px;
+    text-align: center;  
+}
+.text2 {
+    text-align: center;
+}
+.text2 p {
+    font-size: 25px;
+}
+.text1 p{
+    font-family: 'Oswald', sans-serif;   
+    text-align: center;
+    font-size: 15px;
+}
+
+.img_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top:20px;
+    margin: 0px;
+
+    animation-name: five_animation;
+    animation-duration: 5s;    
+    animation-iteration-count: 1;
+}
+.img_info_content a {
+    padding: 20px 0;
+    text-decoration: none;
+    color:rgb(32, 138, 167) ;
+    font-size: 25px;
+}
+.img_info_content a:hover {
+    color:rgb(11, 76, 155)  ;
+    text-decoration: underline;
+}
+.img_info img {   
+    width: 400px;
+    height: 250px;
+    -webkit-box-shadow: 5px 5px 15px 1px #000000; 
+    box-shadow: 5px 5px 15px 1px #000000;
+}
+
+.img_info_content {
+    display: flex;
+    flex-direction: column;  
+    padding-top: 20px;    
+
+}
+
+
+#fre {
+    background: url(./img/x1.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 840px;
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+}
+#fre h2 {
+    padding: 40px 0 20px 0 ;
+}
+#fre p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+.confidens {
+    width: 80%; 
+    margin: auto;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch; 
+    flex-wrap: wrap;
+    
+}
+.info_confidens {
+    display: flex; 
+    flex-direction: column;  
+    width: 250px;    
+    padding: 10px;
+    margin: 70px 0;
+    background: rgb(121, 133, 139);
+    opacity: 0.6;
+    z-index: 1;
+    border-radius: 20px;
+    -webkit-box-shadow: 5px 5px 15px 5px #FEFFFE; 
+    box-shadow: 5px 5px 15px 5px #FEFFFE;
+    
+}
+.info_confidens p {
+    color: white;
+    opacity: 1;
+    z-index: 2;
+}
+.info_confidens a {
+    text-decoration: none;
+    color: rgb(27, 28, 29);
+}
+.info_confidens:hover {
+    opacity: 0.7;
+    background: rgb(55, 181, 223);
+    color: white;   
+}
+
+#four{
+    background: url(./img/x2.jpg)no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 840px;    
+    text-align: center;
+    color: white;
+}
+.four_info {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.four_text {
+    width: 300px;
+    height: 25px;
+    padding: 30px;
+    background: rgb(247, 231, 231);
+    color:rgb(36, 107, 131) ;
+    margin: 20px 0;
+    opacity: 0.8;
+}
+#four button {
+    color: white;
+    background:rgb(23, 68, 119) ;
+    padding: 10px 30px;
+    border: none;
+    margin-top: 60px;    
+}
+#four button:hover {
+    color: rgb(36, 107, 131);
+    background:white;
+       
+}
+
+#five {
+    width: 100%;
+    background: white;
+    color: black;
+    
+}
+#five h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+.five_block {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    animation-name: five_animation;
+    animation-duration: 5s;    
+    animation-iteration-count: 1;
+}
+.five_info {
+    width: 300px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 9px 14px 14px 1px rgba(181,182,181,0.68); 
+    box-shadow: 0px 10px 13px -7px #000000, 9px 14px 14px 1px rgba(181,182,181,0.68);
+
+   
+}
+
+
+@keyframes five_animation{
+    0%{
+        margin-left: 200%;
+        width: 600%;
+    }
+    50%{
+        margin-left: 100%;
+        width: 300%;
+    
+    }
+    100%{
+        margin-left: 0%;
+        width: 100%;
+    }
+    
+}
+.five_img {
+    display: flex;
+    margin-bottom: 10px;
+   
+}
+.five_img img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+   
+} 
+.five_info button {
+    margin: 20px 0;
+    border: none;
+    padding: 5px 3px;    
+}  
+.five_info button:active{
+    color: white;
+    background: rgb(36, 107, 131);
+} 
+
+.partners {
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+
+    animation-name: five_animation;
+    animation-duration: 5s;    
+    animation-iteration-count: 1;
+
+}
+.partners_info img{
+    width: 250px;
+    height: 150px;
+}
+
+#six {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    height: 100px;
+    width: 70%;
+    margin: 40px;
+    margin: auto;
+}
+.consultation {
+    background: rgb(36, 107, 131) ;
+    color: white;
+    padding: 10px;
+    width: 200px;
+    height: 30px;
+}
+#six button {
+    background:rgb(36, 107, 131) ;
+    border:none;
+    color: white;
+    width: 200px;
+}
+#six button:active {
+    background:white ;    
+    color: rgb(36, 107, 131);   
+}
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background: black;
+    color: white;
+    padding: 30px;
+}
+.footer_logo img {
+    width: 350px;
+    margin: 20px;
+}
+.footer_contact {
+    display: flex;
+    flex-direction: column;
+
+}
+.footer_contact button{
+    background: black;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+}
+.footer_menu li {
+    list-style-type: none;
+    margin: 3px 0;
+}
+.footer_menu a {
+    text-decoration: none;
+    color: white;
+}
+.footer_menu a:active {
+    color: rgb(36, 107, 131);
+}
+.footer_contact button:active {
+    color:rgb(36, 107, 131) ;
+    border: 2px solid rgb(36, 107, 131)
+}
+.footer_mail a {
+    color: white;
+    text-decoration: none;
+}
+.footer_viber{
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    
+}
+.footer_fone a {
+    color: white;
+    text-decoration: none;
+}
+.footer_viber a {
+    color: white;
+    text-decoration: none;
+}
+.footer_viber img {
+    width: 60px;
+    padding-right: 10px;
+}
+
+@media(max-width: 1024px){
+    .four_info{
+        width: 100%;
+    }
+   .five_block{
+       width: 100%;
+   }
+   .five_info{
+       width: 200px;
+   }
+   .partners_info img{
+       width: 200px;
+       height: 120px;
+   }
+   #six {
+       width: 98%;
+   }
+
+}
+
+@media(max-width: 768px){
+    .partners {
+        flex-wrap: wrap;
+    }
+    .consultation{
+        width: 150px;
+    }
+    .consultation_text{
+        width: 250px;
+    }
+    #six button {
+        width: 130px;
+        height: 50px;
+    }
+    .info_confidens {
+        margin: 17px 0;
+    }
+    .who h2{
+        font-size: 15px;
+        padding: 0;
+    }
+    .who p{
+        font-size:8px ;
+    }
+    .one1 {
+        height: 158px;
+    }
+    .navbar ul>li {
+        margin: 6px;
+    }
+}
+@media(max-width: 426px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: normal;
+        align-items: normal;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .five_block{
+        flex-direction: column;
+    }
+    .five_info{
+        width: 400px;
+    }
+    .navbar ul{
+        flex-direction:column ; 
+        align-items: center;
+    }
+    .navbar ul>li>a{
+        font-size: 20px;
+    }
+    .logo-smp h2{
+       padding-left: 40px;
+       color: white;
+    }  
+    #one {
+        flex-direction: column;
+    } 
+    .one1 {
+        width: 80%;
+        height: 100px;
+    }
+    #fre {
+        height: auto;
+    }
+    #fre h2{
+        padding: 0;
+    }
+    .four_text{
+        padding: 10px;
+        margin: 5px 0;
+        height: 44px;
+    }
+    #four button{
+        margin-top: 5px;
+    }
+    #six button {
+        background: white;
+        color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    .who h2 {
+        font-size: 30px;
+    }
+    #bg-logo{
+        height: 428px;
+    }
+}
+
